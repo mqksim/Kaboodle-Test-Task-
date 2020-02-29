@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #389ef2;
+  height: 60px;
+  font-family: RobotoCondensedBI, sans-serif;
+  color: #FFFFFF; }
+  .header img {
+    align-self: center; }
+  .header a {
+    display: flex;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 22px; }
+    .header a span {
+      padding: 0px 10px;
+      align-self: center; }
+  .header .container {
+    display: flex;
+    justify-content: space-between; }
+  .header .header-logo {
+    display: flex;
+    font-style: italic; }
+    .header .header-logo img {
+      width: 25px; }
+    .header .header-logo a, .header .header-logo span {
+      align-self: center; }
+    .header .header-logo a {
+      border-right: 2px solid #ffc107;
+      font-size: 25px; }
+  .header .header-text {
+    font-size: 15px;
+    margin-left: 10px;
+    text-transform: uppercase; }
+  .header .header-user__nav {
+    display: flex; }
+  .header .header-signup {
+    margin-left: 30px; }
+    .header .header-signup img {
+      width: 25px;
+      height: 18px; }
+  .header .header-login {
+    margin-left: 30px; }
+    .header .header-login img {
+      width: 35px;
+      height: 35px; }
+  .header .header-about {
+    margin-left: 30px;
+    opacity: 0.6; }
+    .header .header-about:hover {
+      opacity: 1;
+      transition: 0.5s; }
+    .header .header-about img {
+      width: 30px; }
+
+/*# sourceMappingURL= /header.css.map */

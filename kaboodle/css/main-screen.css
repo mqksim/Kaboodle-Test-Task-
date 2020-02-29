@@ -1,0 +1,28 @@
+.main-screen {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/main-screen-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center; }
+  .main-screen .main-screen__logo {
+    font-family: RobotoCondensedI, sans-serif;
+    position: absolute;
+    left: 30%;
+    z-index: 1; }
+    .main-screen .main-screen__logo h1 {
+      width: 400px;
+      font-size: 120px;
+      color: #FFFFFF;
+      letter-spacing: 3px;
+      position: relative;
+      top: 140px;
+      left: 80px; }
+    .main-screen .main-screen__logo img {
+      width: 430px;
+      position: relative;
+      opacity: 0.25;
+      left: 5px;
+      top: -15px; }
+
+/*# sourceMappingURL= /main-screen.css.map */

@@ -1,0 +1,443 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: RobotoCondensedBI;
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-BoldItalic.ttf");
+  /* Путь к файлу со шрифтом */ }
+
+@font-face {
+  font-family: RobotoCondensedI;
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Italic.ttf"); }
+
+@font-face {
+  font-family: RobotoCondensedB;
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf"); }
+
+@font-face {
+  font-family: RobotoB;
+  src: url("../fonts/Roboto/Roboto-Bold.ttf"); }
+
+@font-face {
+  font-family: ProximaNovaB;
+  src: url("../fonts/FontsFree-Net-Proxima-Nova-Bold.otf"); }
+
+@font-face {
+  font-family: RobotoR;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf"); }
+
+button {
+  cursor: pointer;
+  outline: none; }
+
+.container {
+  width: 1138px;
+  margin: 0 auto; }
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #389ef2;
+  height: 60px;
+  font-family: RobotoCondensedBI, sans-serif;
+  color: #FFFFFF; }
+  .header img {
+    align-self: center; }
+  .header a {
+    display: flex;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 22px; }
+    .header a span {
+      padding: 0px 10px;
+      align-self: center; }
+  .header .container {
+    display: flex;
+    justify-content: space-between; }
+  .header .header-logo {
+    display: flex;
+    font-style: italic; }
+    .header .header-logo img {
+      width: 25px; }
+    .header .header-logo a, .header .header-logo span {
+      align-self: center; }
+    .header .header-logo a {
+      border-right: 2px solid #ffc107;
+      font-size: 25px; }
+  .header .header-text {
+    font-size: 15px;
+    margin-left: 10px;
+    text-transform: uppercase; }
+  .header .header-user__nav {
+    display: flex; }
+  .header .header-signup {
+    margin-left: 30px; }
+    .header .header-signup img {
+      width: 25px;
+      height: 18px; }
+  .header .header-login {
+    margin-left: 30px; }
+    .header .header-login img {
+      width: 35px;
+      height: 35px; }
+  .header .header-about {
+    margin-left: 30px;
+    opacity: 0.6; }
+    .header .header-about:hover {
+      opacity: 1;
+      transition: 0.5s; }
+    .header .header-about img {
+      width: 30px; }
+
+.main-screen {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/main-screen-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center; }
+  .main-screen .main-screen__logo {
+    font-family: RobotoCondensedI, sans-serif;
+    position: absolute;
+    left: 30%;
+    z-index: 1; }
+    .main-screen .main-screen__logo h1 {
+      width: 400px;
+      font-size: 120px;
+      color: #FFFFFF;
+      letter-spacing: 3px;
+      position: relative;
+      top: 140px;
+      left: 80px; }
+    .main-screen .main-screen__logo img {
+      width: 430px;
+      position: relative;
+      opacity: 0.25;
+      left: 5px;
+      top: -15px; }
+
+.interface-wrapper {
+  background-color: #000; }
+
+.interface {
+  color: #FFFFFF;
+  padding: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .interface h2 {
+    font-size: 30px;
+    font-family: RobotoCondensedB, sans-serif; }
+  .interface .interface-tools {
+    display: flex;
+    z-index: 1; }
+  .interface .filter-all, .interface .filter-movies, .interface .filter-tv {
+    font-family: RobotoCondensedB, sans-serif;
+    width: 135px;
+    height: 40px;
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 21px;
+    color: #fff;
+    margin-left: 25px;
+    cursor: pointer; }
+  .interface .interface-tools__display {
+    align-self: center;
+    margin-left: 30px; }
+    .interface .interface-tools__display button {
+      width: 40px;
+      height: 20px;
+      margin-left: 20px;
+      background-color: transparent;
+      border: none;
+      background-repeat: no-repeat;
+      background-size: contain; }
+  .interface .view-card {
+    background-image: url("../img/card-view.svg");
+    opacity: 0.4; }
+  .interface .view-list {
+    background-image: url("../img/list-view.svg");
+    opacity: 0.4; }
+  .interface .active-view1, .interface .active-view2 {
+    opacity: 1; }
+  .interface .active-filter1, .interface .active-filter2 {
+    background-color: #fff;
+    color: #000; }
+
+.swiper-container {
+  width: 100%; }
+  .swiper-container button {
+    font-family: ProximaNovaB, sans-serif; }
+
+.swiper-card {
+  height: 440px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .swiper-card .swiper-slide {
+    background: #f1f1f1;
+    color: #000;
+    text-align: center;
+    height: 440px;
+    font-family: RobotoB, sans-serif; }
+  .swiper-card .film-tittle {
+    font-size: 20px;
+    margin-bottom: 2px; }
+  .swiper-card .film-year {
+    font-size: 18px; }
+  .swiper-card .img-wrapper {
+    width: 220px;
+    height: 330px;
+    background-color: #000;
+    margin-bottom: 5px; }
+  .swiper-card .film-image {
+    margin-top: 15px; }
+    .swiper-card .film-image img {
+      width: 220px;
+      height: 330px;
+      opacity: 0.5; }
+  .swiper-card .film-info {
+    text-align: left; }
+  .swiper-card .film-attr {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    top: 12%; }
+  .swiper-card .play-button {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background-color: #000;
+    border: none;
+    border-radius: 50%;
+    top: 40%;
+    left: 35%;
+    opacity: 0.6; }
+    .swiper-card .play-button img {
+      width: 20px !important;
+      height: 20px !important;
+      margin-left: 5px; }
+  .swiper-card .film-type {
+    height: 30px;
+    width: 36px;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    background-image: url("../img/movie-type.svg");
+    background-repeat: no-repeat; }
+  .swiper-card .film-cant-grade {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    background-image: url("../icons/coming-grade.png");
+    background-repeat: no-repeat; }
+  .swiper-card .film-actions {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    padding-left: 7px;
+    font-size: 13px; }
+    .swiper-card .film-actions button {
+      background-color: #fff;
+      border: none;
+      cursor: pointer; }
+    .swiper-card .film-actions p {
+      margin-bottom: 13px; }
+  .swiper-card .film-share {
+    align-self: flex-end;
+    padding: 3px; }
+
+.swiper-list {
+  height: 665px;
+  text-align: left;
+  width: 1138px;
+  margin: 40px auto; }
+  .swiper-list .swiper-slide {
+    display: flex; }
+  .swiper-list .play-button {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background-color: #000;
+    border: none;
+    border-radius: 50%;
+    top: 25%;
+    left: 2%;
+    opacity: 0.6; }
+    .swiper-list .play-button img {
+      width: 20px !important;
+      height: 20px !important;
+      margin-left: 5px; }
+  .swiper-list .gradeless {
+    margin-left: 25px;
+    align-self: center;
+    width: 80px;
+    height: 80px; }
+    .swiper-list .gradeless img {
+      width: 80px;
+      height: 80px; }
+  .swiper-list .film-image img {
+    width: 105px;
+    height: 160px; }
+  .swiper-list .film-rate {
+    margin-left: 23px;
+    align-self: center;
+    display: flex; }
+    .swiper-list .film-rate svg {
+      transform: rotate(-90deg); }
+    .swiper-list .film-rate .progress-ring__circle {
+      background-color: #2bff8f; }
+    .swiper-list .film-rate span {
+      font-size: 28px;
+      color: #22ca71;
+      position: relative;
+      right: 50%;
+      align-self: center; }
+  .swiper-list .content-wrapper {
+    margin-left: 23px;
+    width: 850px;
+    display: flex;
+    flex-direction: column; }
+    .swiper-list .content-wrapper .film-info {
+      margin-bottom: 20px;
+      font-family: RobotoCondensedB, sans-serif;
+      font-size: 16px; }
+      .swiper-list .content-wrapper .film-info span:after {
+        content: "|";
+        margin-left: 5px; }
+      .swiper-list .content-wrapper .film-info span:last-child:after {
+        content: ""; }
+      .swiper-list .content-wrapper .film-info .film-tittle {
+        color: #389ef2; }
+    .swiper-list .content-wrapper .film-description {
+      color: #4b555d;
+      font-size: 18px;
+      font-family: RobotoR, sans-serif;
+      height: 60px;
+      margin-bottom: 20px; }
+    .swiper-list .content-wrapper .film-actions {
+      display: flex;
+      bottom: 0;
+      width: 850px; }
+      .swiper-list .content-wrapper .film-actions button {
+        border: none;
+        margin-right: 35px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        background-color: transparent; }
+        .swiper-list .content-wrapper .film-actions button:last-child {
+          margin-right: 0;
+          position: absolute;
+          right: 50px;
+          color: #389ef2;
+          font-family: RobotoCondensedB, sans-serif;
+          font-size: 18px;
+          text-decoration: underline; }
+        .swiper-list .content-wrapper .film-actions button p {
+          font-family: ProximaNovaB,sans-serif;
+          font-size: 17px; }
+          .swiper-list .content-wrapper .film-actions button p:after {
+            content: "|";
+            margin: 0px 5px; }
+
+#player {
+  background-color: #000;
+  width: 100%;
+  text-align: center; }
+  #player #close-player {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    z-index: 1; }
+    #player #close-player img {
+      width: 50px;
+      margin: 0 auto; }
+
+footer {
+  background-image: url("../img/footer-bg.jpg");
+  background-size: cover;
+  padding-top: 36px;
+  padding-bottom: 30px; }
+  footer .footer-content {
+    margin: 0 auto;
+    text-align: center;
+    color: #FFFFFF; }
+    footer .footer-content h3 {
+      font-family: RobotoCondensedBI, sans-serif;
+      font-size: 27px;
+      margin-bottom: 22px; }
+    footer .footer-content a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 25px;
+      font-family: RobotoCondensedI, sans-serif; }
+      footer .footer-content a:after {
+        content: "|";
+        margin: 0 5px; }
+      footer .footer-content a:last-child:after {
+        content: ""; }
+    footer .footer-content p {
+      margin-top: 30px;
+      font-family: RobotoCondensedI, sans-serif;
+      font-size: 18px; }
+
+.swiper-button-next,
+.swiper-button-prev {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  z-index: 2; }
+  .swiper-button-next img,
+  .swiper-button-prev img {
+    width: 25px;
+    height: 25px; }
+
+.swiper-button-next {
+  transform: rotate(180deg);
+  right: 0;
+  bottom: 0; }
+
+.swiper-button-prev {
+  right: 0;
+  top: 0; }
+
+/*# sourceMappingURL= /style.css.map */

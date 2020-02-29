@@ -1,0 +1,29 @@
+footer {
+  background-image: url("../img/footer-bg.jpg");
+  background-size: cover;
+  padding-top: 36px;
+  padding-bottom: 30px; }
+  footer .footer-content {
+    margin: 0 auto;
+    text-align: center;
+    color: #FFFFFF; }
+    footer .footer-content h3 {
+      font-family: RobotoCondensedBI, sans-serif;
+      font-size: 27px;
+      margin-bottom: 22px; }
+    footer .footer-content a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 25px;
+      font-family: RobotoCondensedI, sans-serif; }
+      footer .footer-content a:after {
+        content: "|";
+        margin: 0 5px; }
+      footer .footer-content a:last-child:after {
+        content: ""; }
+    footer .footer-content p {
+      margin-top: 30px;
+      font-family: RobotoCondensedI, sans-serif;
+      font-size: 18px; }
+
+/*# sourceMappingURL= /footer.css.map */

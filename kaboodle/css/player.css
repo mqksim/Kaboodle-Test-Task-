@@ -1,0 +1,18 @@
+#player {
+  background-color: #000;
+  width: 100%;
+  text-align: center; }
+  #player #close-player {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    z-index: 1; }
+    #player #close-player img {
+      width: 50px;
+      margin: 0 auto; }
+
+/*# sourceMappingURL= /player.css.map */

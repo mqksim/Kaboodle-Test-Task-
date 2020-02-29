@@ -1,0 +1,50 @@
+.interface-wrapper {
+  background-color: #000; }
+
+.interface {
+  color: #FFFFFF;
+  padding: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .interface h2 {
+    font-size: 30px;
+    font-family: RobotoCondensedB, sans-serif; }
+  .interface .interface-tools {
+    display: flex;
+    z-index: 1; }
+  .interface .filter-all, .interface .filter-movies, .interface .filter-tv {
+    font-family: RobotoCondensedB, sans-serif;
+    width: 135px;
+    height: 40px;
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 21px;
+    color: #fff;
+    margin-left: 25px;
+    cursor: pointer; }
+  .interface .interface-tools__display {
+    align-self: center;
+    margin-left: 30px; }
+    .interface .interface-tools__display button {
+      width: 40px;
+      height: 20px;
+      margin-left: 20px;
+      background-color: transparent;
+      border: none;
+      background-repeat: no-repeat;
+      background-size: contain; }
+  .interface .view-card {
+    background-image: url("../img/card-view.svg");
+    opacity: 0.4; }
+  .interface .view-list {
+    background-image: url("../img/list-view.svg");
+    opacity: 0.4; }
+  .interface .active-view1, .interface .active-view2 {
+    opacity: 1; }
+  .interface .active-filter1, .interface .active-filter2 {
+    background-color: #fff;
+    color: #000; }
+
+/*# sourceMappingURL= /interface.css.map */
