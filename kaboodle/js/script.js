@@ -6,7 +6,6 @@ var s2Wrapper = s2.querySelector('.swiper-wrapper');
 var html = ``;
 var list = [], comingSoon = [], mostPopular = [], comingSoonF = [], mostPopularF = [];
 
-
 async function getData() {
     const response = await fetch('https://api.myjson.com/bins/14o7e4');
     const myJson = await response.json();
@@ -20,11 +19,8 @@ async function getData() {
     }
     createHorizSlider1(comingSoon);
     createVertSlider2(mostPopular);
-
 }
-
 getData();
-
 
 function initializePlayerButtons() {
     let playButtons = document.querySelectorAll('.play-button');
@@ -36,13 +32,11 @@ function initializePlayerButtons() {
 }
 
 function openPlayer() {
-
     if(player) {
         if(player.children[1].id === "video-placeholder") {
             player.destroy();
         }
     }
-
     document.getElementById('close-player').style.display = "block";
     var player = new YT.Player('video-placeholder', {
         width: 1200,
@@ -62,9 +56,6 @@ function closePlayer(player) {
         document.getElementById('close-player').style.display = "none";
     })
 }
-
-
-
 
 function createHorizSlider1(array) {
     s1.querySelector('.swiper-button-prev').style.display = "none";
@@ -180,7 +171,6 @@ function mostPopularFilter(str) {
     }
 }
 
-
 function setProgress() {
     var circles = document.querySelectorAll('.progress-ring__circle');
     var rates = document.querySelectorAll('.rate');
@@ -192,9 +182,6 @@ function setProgress() {
         var offset = circumferens - (+rates[i].textContent) * 10 / 100 * circumferens;
         circles[i].style.strokeDashoffset = offset;
     }
-
-
-    // circle.setAttribute("dash-")
 }
 
 function drawList(t, arr) {
@@ -315,6 +302,7 @@ document.getElementById('view-list__s1').addEventListener('click', function (e) 
         createVertSlider1(comingSoon);
     }
 });
+
 document.getElementById('view-card__s1').addEventListener('click', function (e) {
     document.querySelector('.active-filter1').classList.remove("active-filter1");
     document.getElementById('filter-all1').classList.add("active-filter1");
@@ -342,6 +330,7 @@ document.getElementById('view-list__s2').addEventListener('click', function (e) 
         createVertSlider2(mostPopular);
     }
 });
+
 document.getElementById('view-card__s2').addEventListener('click', function (e) {
     document.querySelector('.active-filter2').classList.remove("active-filter2");
     document.getElementById('filter-all2').classList.add("active-filter2");
@@ -360,6 +349,7 @@ document.getElementById('filter-tv1').addEventListener('click', function (e) {
     e.target.classList.add("active-filter1");
     comingFilter("TV-Show");
 });
+
 document.getElementById('filter-all1').addEventListener('click', function (e) {
     document.querySelector('.active-filter1').classList.remove("active-filter1");
     e.target.classList.add("active-filter1");
@@ -371,6 +361,7 @@ document.getElementById('filter-all1').addEventListener('click', function (e) {
         createVertSlider1(comingSoon);
     }
 });
+
 document.getElementById('filter-movies1').addEventListener('click', function (e) {
     document.querySelector('.active-filter1').classList.remove("active-filter1");
     e.target.classList.add("active-filter1");
@@ -382,6 +373,7 @@ document.getElementById('filter-tv2').addEventListener('click', function (e) {
     e.target.classList.add("active-filter2");
     mostPopularFilter("TV-Show");
 });
+
 document.getElementById('filter-all2').addEventListener('click', function (e) {
     document.querySelector('.active-filter2').classList.remove("active-filter2");
     e.target.classList.add("active-filter2");
@@ -393,6 +385,7 @@ document.getElementById('filter-all2').addEventListener('click', function (e) {
         createVertSlider2(mostPopular);
     }
 });
+
 document.getElementById('filter-movies2').addEventListener('click', function (e) {
     document.querySelector('.active-filter2').classList.remove("active-filter2");
     e.target.classList.add("active-filter2");
